@@ -65,8 +65,8 @@ let config = {
 let gui = new dat.GUI({ width: 300 });
 function startGUI () {    
     gui.add(config, 'OBJECT', { 'Sphere': 0, 'Torus': 1, 'Cone': 2, 'Cube': 3 }).name('object').onChange(update);  
-    gui.add(config, 'LIGHT').name('light?').onChange(update);
-    gui.add(config, 'ROTATE').name('rotate?').onChange(update);
+    gui.add(config, 'LIGHT').name('rotate light?').onChange(update);
+    gui.add(config, 'ROTATE').name('rotate object?').onChange(update);
     gui.add(config, 'SPEED', 0.0, 1.0).name('speed');
     gui.add(config, 'RAINBOW').name('rainbow?').onChange(update);
     gui.addColor(config, 'COLOR').name('color').onChange(update);
