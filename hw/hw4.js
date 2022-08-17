@@ -69,7 +69,7 @@ function main() {
   initShaders(gl, VSHADER_SOURCE, FSHADER_SOURCE);
   
   var image = new Image();  
-  let url = "http://www.cs.umsl.edu/~kang/htdocs/images/butterfly.jpg";
+  let url = "https://upload.wikimedia.org/wikipedia/commons/3/3d/Fesoj_-_Papilio_machaon_%28by%29.jpg";
   image.crossOrigin = ""; // request CORS permission
   image.src = url; 
   image.onload = function() { render(canvas, gl, image); };
